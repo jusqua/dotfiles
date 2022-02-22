@@ -11,7 +11,7 @@ set.scrolloff = 8
 set.sidescrolloff = 8
 
 -- Tabulation
-set.expendtab = true
+set.expandtab = true
 set.tabstop = 2
 set.softtabstop = 2
 set.shiftwidth = 2
