@@ -57,6 +57,8 @@ nmap("<leader>w", ":w<CR>")
 nmap("<leader>q", ":q<CR>")
 nmap("<leader>fq", ":q!<CR>")
 
+imap("jk", "<Esc>")
+
 -- Moving text
 nmap("<A-k>", ":move -2<CR>==")
 nmap("<A-j>", ":move +1<CR>==")
