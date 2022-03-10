@@ -9,17 +9,9 @@ local function map(mode, new, old, options)
   vim.api.nvim_set_keymap(mode, new, old, options)
 end
 
-local function nmap(new, old)
-  map("n", new, old)
-end
-
-local function imap(new, old)
-  map("i", new, old)
-end
-
-local function vmap(new, old)
-  map("v", new, old)
-end
+local nmap = function (new, old) map("n", new, old) end
+local imap = function (new, old) map("i", new, old) end
+local vmap = function (new, old) map("v", new, old) end
 
 -- Leader key
 map("", "<Space>", "<Nop>")
@@ -33,24 +25,56 @@ nmap("<C-k>", "<C-w>k")
 nmap("<C-l>", "<C-w>l")
 
 -- Window resize
-nmap("<C-Up>", ":resize -2<CR>")
-nmap("<C-Down>", ":resize +2<CR>")
-nmap("<C-Left>", ":vertical resize -2<CR>")
-nmap("<C-Right>", ":vertical resize +2<CR>")
+nmap("<C-K>", ":resize -2<CR>")
+nmap("<C-J>", ":resize +2<CR>")
+nmap("<C-L>", ":vertical resize -2<CR>")
+nmap("<C-H>", ":vertical resize +2<CR>")
 
 -- Window split
-nmap("<leader><Enter>", "<C-w>v")
-nmap("<leader>q", ":close<CR>")
+nmap("<leader>s", "<C-w>v")
 
 -- Tab control
-nmap("<leader>tn", ":tabnew<CR>")
-nmap("<leader>tc", ":tabclose<CR>")
+nmap("<leader>tn", ":tabedit<CR>")
 nmap("<leader>to", ":tabonly<CR>")
 
 -- Tab navigation
-nmap("<leader>l", ":tabNext<CR>")
-nmap("<leader>h", ":tabprevious<CR>")
+nmap("<leader>l", "gt")
+nmap("<leader>h", "gT")
 
--- Quicksave
+nmap("<leader>1", ":tabfirst<CR>")
+nmap("<leader>2", ":tabnext 2<CR>")
+nmap("<leader>3", ":tabnext 3<CR>")
+nmap("<leader>4", ":tabnext 4<CR>")
+nmap("<leader>5", ":tabnext 5<CR>")
+nmap("<leader>6", ":tabnext 6<CR>")
+nmap("<leader>7", ":tabnext 7<CR>")
+nmap("<leader>8", ":tabnext 8<CR>")
+nmap("<leader>9", ":tabnext 9<CR>")
+nmap("<leader>0", ":tabnext 10<CR>")
+
+-- Quick actions
 nmap("<leader>w", ":w<CR>")
+nmap("<leader>q", ":q<CR>")
+nmap("<leader>fq", ":q!<CR>")
+
+-- Moving text
+nmap("<A-k>", ":move -2<CR>==")
+nmap("<A-j>", ":move +1<CR>==")
+
+imap("<A-k>", "<Esc>:move -2<CR>==gi")
+imap("<A-j>", "<Esc>:move +1<CR>==gi")
+
+vmap("<A-k>", ":move '<-2<CR>gv=gv")
+vmap("<A-j>", ":move '>+1<CR>gv=gv")
+
+-- Keep visual when indent
+vmap("<", "<gv")
+vmap(">", ">gv")
+
+-- Override visual mode paste behavior
+vmap("p", "_dP")
+
+-- New line without insert
+nmap("<S-Enter>", "O<Esc>")
+nmap("<CR>", "o<Esc>")
 
