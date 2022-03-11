@@ -55,9 +55,10 @@ nmap("<leader>0", ":tabnext 10<CR>")
 -- Quick actions
 nmap("<leader>w", ":w<CR>")
 nmap("<leader>q", ":q<CR>")
-nmap("<leader>fq", ":q!<CR>")
 
-imap("jk", "<Esc>")
+-- Custom navigations
+nmap("<leader>e", "$")
+nmap("<leader>f", "^")
 
 -- Moving text
 nmap("<A-k>", ":move -2<CR>==")
