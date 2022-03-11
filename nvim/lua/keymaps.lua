@@ -74,7 +74,11 @@ vmap("<", "<gv")
 vmap(">", ">gv")
 
 -- Override visual mode paste behavior
-vmap("p", "_dP")
+vmap("p", '"_dP')
+
+-- Override delete behavior
+nmap("d", '"_d')
+vmap("d", '"_d')
 
 -- New line without insert
 nmap("<S-Enter>", "O<Esc>")
