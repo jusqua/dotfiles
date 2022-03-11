@@ -25,17 +25,17 @@ nmap("<C-k>", "<C-w>k")
 nmap("<C-l>", "<C-w>l")
 
 -- Window resize
-nmap("<C-K>", ":resize -2<CR>")
-nmap("<C-J>", ":resize +2<CR>")
-nmap("<C-L>", ":vertical resize -2<CR>")
-nmap("<C-H>", ":vertical resize +2<CR>")
+nmap("<C-Up>", ":resize -2<CR>")
+nmap("<C-Down>", ":resize +2<CR>")
+nmap("<C-Right>", ":vertical resize -2<CR>")
+nmap("<C-Left>", ":vertical resize +2<CR>")
 
 -- Window split
-nmap("<leader>s", "<C-w>v")
+nmap("<leader>v", "<C-w>v")
+nmap("<leader>s", "<C-w>s")
 
 -- Tab control
-nmap("<leader>tn", ":tabedit<CR>")
-nmap("<leader>to", ":tabonly<CR>")
+nmap("<leader>n", ":tabedit<CR>")
 
 -- Tab navigation
 nmap("<leader>l", "gt")
