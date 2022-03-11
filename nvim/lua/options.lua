@@ -15,6 +15,7 @@ set.expandtab = true
 set.tabstop = 2
 set.softtabstop = 2
 set.shiftwidth = 2
+set.autoindent = true
 
 -- File manipulation
 set.fileencoding = "utf-8"
@@ -22,6 +23,8 @@ set.backup = false
 set.swapfile = false
 set.undofile = true
 set.clipboard = "unnamedplus"
+set.autochdir = true
+set.autoread = true
 
 -- Visualization
 set.wrap = false
@@ -30,6 +33,8 @@ set.splitright = true
 set.mouse = "a"
 set.termguicolors = true
 set.conceallevel = 0
+set.confirm = false
+set.lazyredraw = true
 
 -- Search
 set.hlsearch = true
