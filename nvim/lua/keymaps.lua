@@ -99,3 +99,6 @@ tmap("<Esc>", "<C-\\><C-N>")
 -- Open terminal on a tab
 nmap("<leader>t", ":tabedit<CR>:terminal<CR>")
 
+-- Fast docs
+nmap("<leader>d", "<Help>")
+
