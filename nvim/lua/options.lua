@@ -42,3 +42,11 @@ set.incsearch = true
 set.ignorecase = true
 set.smartcase = true
 
+-- Tweaks
+set.history = 50
+set.signcolumn = "yes"
+set.foldmethod = "manual"
+set.shortmess:append "c"
+set.whichwrap:append "<,>,[,]"
+set.iskeyword:append "-,_"
+
