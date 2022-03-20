@@ -93,3 +93,9 @@ nmap("<C-r>", "<Nop>")
 -- Disable Ex mode
 nmap("Q", "<Nop>")
 
+-- Esc on Terminal mode
+tmap("<Esc>", "<C-\\><C-N>")
+
+-- Open terminal on a tab
+nmap("<leader>t", ":tabedit<CR>:terminal<CR>:setlocal nonumber norelativenumber<CR>i")
+
