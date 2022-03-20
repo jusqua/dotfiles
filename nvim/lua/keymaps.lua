@@ -12,6 +12,7 @@ end
 local nmap = function (new, old) map("n", new, old) end
 local imap = function (new, old) map("i", new, old) end
 local vmap = function (new, old) map("v", new, old) end
+local tmap = function (new, old) map("t", new, old) end
 
 -- Leader key
 map("", "<Space>", "<Nop>")
@@ -57,8 +58,8 @@ nmap("<leader>w", ":w<CR>")
 nmap("<leader>q", ":q<CR>")
 
 -- Custom navigations
-nmap("<leader>e", "$")
-nmap("<leader>f", "^")
+nmap("L", "$")
+nmap("H", "^")
 
 -- Moving text
 nmap("<A-k>", ":move -2<CR>==")
@@ -82,6 +83,13 @@ nmap("d", '"_d')
 vmap("d", '"_d')
 
 -- New line without insert
-nmap("<S-Enter>", "O<Esc>")
-nmap("<CR>", "o<Esc>")
+nmap("O", "O<Esc>")
+nmap("o", "o<Esc>")
+
+-- Redo instead of undo line
+nmap("U", "<C-r>")
+nmap("<C-r>", "<Nop>")
+
+-- Disable Ex mode
+nmap("Q", "<Nop>")
 
