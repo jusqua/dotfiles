@@ -97,5 +97,5 @@ nmap("Q", "<Nop>")
 tmap("<Esc>", "<C-\\><C-N>")
 
 -- Open terminal on a tab
-nmap("<leader>t", ":tabedit<CR>:terminal<CR>:setlocal nonumber norelativenumber<CR>i")
+nmap("<leader>t", ":tabedit<CR>:terminal<CR>")
 
