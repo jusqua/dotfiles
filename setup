@@ -1,8 +1,15 @@
 #!/bin/sh
 
+# Alises
+CONFIG="$HOME/.config"
+
+link() {
+  exec ln -sf "$PWD/$1" $2
+}
+
 # Git
-exec ln -sf $PWD/.gitconfig $HOME
+link .gitconfig $HOME
 
 # Neovim
-exec ln -sf $PWD/nvim $HOME/.config/nvim
+link nvim $CONFIG
 
