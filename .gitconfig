@@ -1,0 +1,11 @@
+[user]
+	name = jusqua
+	email = adrian.gama.se@gmail.com
+[core]
+	editor = nvim
+[credential]
+	helper = store
+[init]
+	defaultBranch = main
+[color]
+	ui = auto

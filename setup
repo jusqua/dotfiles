@@ -1,5 +1,8 @@
-#!/bin/bash
+#!/bin/sh
 
-# Setup nvim config
+# Git
+exec ln -sf $PWD/.gitconfig $HOME
+
+# Neovim
 exec ln -sf $PWD/nvim $HOME/.config/nvim
 
