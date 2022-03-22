@@ -1,15 +1,29 @@
 #!/bin/sh
+set -eu
 
 # Alises
 CONFIG="$HOME/.config"
 
+gitconfig() {
+  echo "Git settigs -----" ;
+  read -p "Username: " username ;
+  read -p "Email: " email ;
+  exec git config --global user.name $username &
+  wait
+  exec git config --global user.email $email &
+  wait
+}
+
 link() {
-  exec ln -sf "$PWD/$1" $2
+  exec ln -sf "$PWD/$1" $2 &
 }
 
 # Git
 link .gitconfig $HOME
+gitconfig
 
 # Neovim
 link nvim $CONFIG
+
+wait
 
