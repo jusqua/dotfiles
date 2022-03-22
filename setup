@@ -12,6 +12,7 @@ gitconfig() {
   wait
   exec git config --global user.email $email &
   wait
+  exec git update-index --assume-unchanged .gitconfig &
 }
 
 link() {
