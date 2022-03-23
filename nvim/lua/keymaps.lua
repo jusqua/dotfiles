@@ -25,7 +25,7 @@ set.maplocalleader = " "
 nmap("<leader>w", ":w<CR>")
 -- Leader + q to quit
 nmap("<leader>q", ":q<CR>")
--- Y to yang entire text after cursor
+-- Y to yank entire text after cursor
 nmap("Y", "y$")
 -- L works like End key
 nmap("L", "$")
