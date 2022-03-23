@@ -1,7 +1,11 @@
--- Aliases
-local cmd = function (cmd) vim.api.nvim_exec(cmd, false) end
+-- : Aliases
+local function cmd (string)
+  vim.api.nvim_exec(string, false)
+end
 
--- Terminam mode config
+-- : Terminal mode startup config
+-- Starts in insert mode
+-- Starts without numbers
 cmd [[
   augroup terminal
     autocmd!
@@ -10,6 +14,8 @@ cmd [[
   augroup end
 ]]
 
+-- : Opening file start on the last line
+-- Ignores git files for this
 cmd [[
   augroup lastposition
     autocmd!
