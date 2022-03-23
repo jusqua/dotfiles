@@ -56,6 +56,7 @@ nmap("<leader>0", ":tabnext 10<CR>")
 -- Quick actions
 nmap("<leader>w", ":w<CR>")
 nmap("<leader>q", ":q<CR>")
+nmap("Y", "y$")
 
 -- Custom navigations
 nmap("L", "$")
