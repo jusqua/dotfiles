@@ -5,6 +5,8 @@ set -eu
 CONFIG="$HOME/.config"
 
 gitconfig() {
+  exec cp -rf .gitconfig $HOME &
+  wait
   echo "Git settigs -----" ;
   read -p "Username: " username ;
   read -p "Email: " email ;
@@ -12,7 +14,6 @@ gitconfig() {
   wait
   exec git config --global user.email $email &
   wait
-  exec git update-index --assume-unchanged .gitconfig &
 }
 
 link() {
@@ -20,7 +21,6 @@ link() {
 }
 
 # Git
-link .gitconfig $HOME
 gitconfig
 
 # Neovim
