@@ -26,5 +26,8 @@ gitconfig
 # Neovim
 link nvim $CONFIG
 
+# Fish
+link fish $CONFIG
+
 wait
 
