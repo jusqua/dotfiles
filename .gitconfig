@@ -6,3 +6,8 @@
 	defaultBranch = main
 [color]
 	ui = auto
+[user]
+	name = Ádrian Gama
+  email = adrian.gama.se@gmail.com
+[github]
+  name = jusqua
