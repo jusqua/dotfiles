@@ -17,6 +17,9 @@ link .gitconfig $HOME
 # Neovim
 link nvim $CONFIG
 
+# Helix
+link helix $CONFIG
+
 # Fish
 link fish $CONFIG
 
