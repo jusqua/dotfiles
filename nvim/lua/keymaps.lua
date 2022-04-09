@@ -51,6 +51,8 @@ nmap("U", "<C-r>")
 nmap("<C-r>", "<Nop>")
 -- Disable Ex mode
 nmap("Q", "<Nop>")
+-- Fast Normal switch
+imap("<A-x>", "<Esc>")
 
 -- : Window navigation
 -- Ctrl + Vi keys to navigate between window splits
