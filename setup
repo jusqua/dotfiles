@@ -20,6 +20,6 @@ link nvim $CONFIG
 # Fish
 link fish $CONFIG
 
-# Kitty
-link kitty $CONFIG
+# Alacritty
+link alacritty $CONFIG
 
