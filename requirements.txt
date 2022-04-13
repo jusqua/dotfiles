@@ -2,3 +2,5 @@ fish
 starship
 alacritty
 neovim
+exa
+bat
