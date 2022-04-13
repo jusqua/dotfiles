@@ -1,15 +1,16 @@
 #!/bin/sh
 set -eu
 
-# Alises
-CONFIG="$HOME/.config"
+# Get functions and variables
+for file in $(ls .setup); do
+  . ".setup/$file"
+done
 
-link() {
-  exec rm -rf "$2/$1" &
-  wait
-  exec ln -nsf "$PWD/$1" $2 &
-  wait
-}
+# Verify packages
+verify_packages requirements.txt
+
+# Confirm overriding
+confirm_override
 
 # Git
 link .gitconfig $HOME

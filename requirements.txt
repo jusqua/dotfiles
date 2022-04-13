@@ -1,6 +1,6 @@
 fish
 starship
 alacritty
-neovim
+nvim
 exa
 bat

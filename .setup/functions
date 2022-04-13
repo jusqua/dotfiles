@@ -1,0 +1,42 @@
+#!/bin/sh
+# Abort current script
+abort() {
+  echo "Aborting."
+  exit 1
+}
+
+# Link a file or directory to that selected path
+link() {
+  printf "Linking $1 to $2... "
+  exec rm -rf "$2/$1" &
+  wait
+  exec ln -nsf "$PWD/$1" $2 &
+  wait
+  echo "Done"
+}
+
+# Function that loop through a file and verifies if a program exists
+verify_packages() {
+  missing=""
+  
+  printf "Verifing required packages are avaliable... "
+  while read program; do
+    command -v $program > /dev/null 2>&1 || missing="$program $missing"
+  done < $1
+  echo "Done"
+
+  if [ "$missing" != "" ]; then
+    echo "Missing packages: $missing"
+    abort
+  fi
+}
+
+# Get user confirmation about overriding the current data
+confirm_override() {
+  read -p "Accept overriding your current config files? [y/N] " confirm
+  case $confirm in
+    [yY][eE][sS]|[yY]) break;;
+    *) abort;;
+  esac      
+}
+
