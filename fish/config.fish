@@ -25,9 +25,8 @@ alias .....='cd ../../../..'
 alias e=$EDITOR
 
 alias ls='exa --color=always --group-directories-first' 
-alias la='exa -a --color=always --group-directories-first' 
-alias ll='exa -la --color=always --group-directories-first' 
-alias lt='exa -aT --color=always --group-directories-first' 
+alias la='exa --all --color=always --group-directories-first' 
+alias ll='exa --long --all --git --color=always --group-directories-first' 
 
 alias cat='bat'
 
