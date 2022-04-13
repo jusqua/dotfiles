@@ -36,7 +36,7 @@ alias mv='mv -i'
 alias rm='rm -i'
 
 alias add='git add'
-alias addall='git add . && git status --short ;;'
+alias addall='git add . && git status --short'
 alias branch='git branch'
 alias checkout='git checkout'
 alias clone='git clone'
