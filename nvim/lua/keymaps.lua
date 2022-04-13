@@ -107,7 +107,7 @@ vmap("<A-j>", ":move '>+1<CR>gv=gv")
 
 -- : Terminal
 -- Esc to set Normal mode on Terminal mode
-tmap("<Esc>", "<C-\\><C-N>")
+tmap("<leader><Esc>", "<C-\\><C-N>")
 -- Leader + t to open terminal on a tab
 nmap("<leader>t", ":tabedit<CR>:terminal<CR>")
 
