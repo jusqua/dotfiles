@@ -5,6 +5,15 @@ abort() {
   exit 1
 }
 
+# Get user confirmation about something
+confirm() {
+  read -p "$1 [y/N] " confirm
+  case $confirm in
+    [yY][eE][sS]|[yY]) break;;
+    *) abort;;
+  esac
+}
+
 # Link a file or directory to that selected path
 link() {
   printf "Linking $1 to $2... "
@@ -27,16 +36,7 @@ verify_packages() {
 
   if [ "$missing" != "" ]; then
     echo "Missing packages: $missing"
-    abort
+    confirm "Do you want to setup anyway?"
   fi
-}
-
-# Get user confirmation about overriding the current data
-confirm_override() {
-  read -p "Accept overriding your current config files? [y/N] " confirm
-  case $confirm in
-    [yY][eE][sS]|[yY]) break;;
-    *) abort;;
-  esac      
 }
 
