@@ -7,9 +7,6 @@ set -p fish_user_paths $HOME/.local/bin
 # Supresses intro message
 set fish_greeting
 
-# Set terminal type
-set TERM alacritty
-
 # Set default terminal editor
 set EDITOR nvim
 

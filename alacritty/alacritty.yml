@@ -1,6 +1,6 @@
 env:
   # Set the `$TERM` environment variable
-  TERM: alacritty
+  TERM: xterm-256color
 
 window:
   # Remove windows decorations
