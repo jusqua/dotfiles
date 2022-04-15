@@ -42,10 +42,6 @@ alias pull='git pull'
 alias push='git push'
 alias info='git status --short'
 
-alias dnfadd="sudo dnf install"
-alias dnfpurge="sudo dnf remove"
-alias dnfupdate="sudo dnf update"
-
 # Start Starship
 starship init fish | source
 
