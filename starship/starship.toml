@@ -1,0 +1,16 @@
+add_newline = false
+format = "$directory$git_branch$git_status$python$character"
+
+[directory]
+truncation_length = 1
+
+[git_branch]
+symbol = ""
+format = "[$branch ]($style)"
+
+[package]
+disabled = true
+
+[python]
+format = "[($virtualenv)]($style)"
+

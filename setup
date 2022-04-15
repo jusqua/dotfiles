@@ -20,6 +20,7 @@ link nvim $CONFIG
 
 # Fish
 link fish $CONFIG
+link starship/starship.toml $CONFIG
 
 # Alacritty
 link alacritty $CONFIG
