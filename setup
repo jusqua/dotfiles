@@ -13,7 +13,7 @@ verify_packages requirements.txt
 confirm "Accept overriding your current config files?"
 
 # Git
-link .gitconfig $HOME
+link git/.gitconfig $HOME
 
 # Neovim
 link nvim $CONFIG
