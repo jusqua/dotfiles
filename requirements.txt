@@ -1,6 +1,0 @@
-fish
-starship
-alacritty
-nvim
-exa
-bat
