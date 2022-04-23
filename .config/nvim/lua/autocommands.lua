@@ -1,7 +1,3 @@
--- : Aliases
-local augroup = vim.api.nvim_create_augroup
-local autocmd = vim.api.nvim_create_autocmd
-
 -- : Tweaks
 -- Highlight yanks
 augroup("YankHighlight", { clear = true })

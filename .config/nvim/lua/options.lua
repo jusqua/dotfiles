@@ -1,8 +1,3 @@
--- : Aliases
-set = vim.opt
-let = vim.g
-cmd = vim.cmd
-
 -- : Line indicator
 -- Add numbers of the lines
 set.number = true

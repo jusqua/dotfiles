@@ -1,19 +1,3 @@
--- : Aliases
-local let = vim.g
-
-local function map(mode, new, old, options)
-  local default = { noremap = true, silent = true }
-  if not options then
-    options = default
-  end
-  vim.api.nvim_set_keymap(mode, new, old, options)
-end
-
-local nmap = function (new, old) map("n", new, old) end
-local imap = function (new, old) map("i", new, old) end
-local vmap = function (new, old) map("v", new, old) end
-local tmap = function (new, old) map("t", new, old) end
-
 -- : Leader key
 -- Set as Space key
 map("", "<Space>", "<Nop>")
