@@ -1,7 +1,7 @@
 -- : Aliases
-local set = vim.opt
-local let = vim.g
-local cmd = vim.cmd
+set = vim.opt
+let = vim.g
+cmd = vim.cmd
 
 -- : Line indicator
 -- Add numbers of the lines
@@ -83,15 +83,10 @@ set.whichwrap:append "<,>,[,]"
 -- Considers hyphen and underline was word letters
 set.iskeyword:append "-,_"
 
--- : GUI
-set.guifont = {"Hack", "h11"}
-
--- : Colorscheme
-let.tokyonight_style = "storm"
-cmd [[ colorscheme tokyonight ]]
-
 -- : Neovide
 if (let.neovide) then
+  -- Change font
+  set.guifont = "Hack:h11"
   -- Window aspects
   let.neovide_refresh_rate = 75
   let.neovide_no_idle = true
