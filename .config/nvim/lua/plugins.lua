@@ -1,0 +1,27 @@
+-- : Aliases
+local fn = vim.fn
+local install_path = fn.stdpath("data") .. "/site/pack/packer/start/packer.nvim"
+
+-- : Automatically install packer
+if fn.empty(fn.glob(install_path)) > 0 then
+  local packer_url = "https://github.com/wbthomason/packer.nvim"
+  packer_bootstrap = fn.system({ "git", "clone", "--depth", "1", packer_url, install_path })
+end
+
+-- : Checking package
+local ok, packer = pcall(require, "packer")
+if not ok then
+  return
+end
+
+-- : Plugins
+return packer.startup(function(use)
+    -- The own Packer
+    use "wbthomason/packer.nvim"
+
+    -- Setup config after clone
+    if packer_bootstrap then
+      require("packer").sync()
+    end
+end)
+

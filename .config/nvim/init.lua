@@ -1,5 +1,4 @@
-print("W.I.P.")
-
+require "plugins"
 require "keymaps"
 require "autocommands"
 require "options"
