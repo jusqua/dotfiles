@@ -18,6 +18,8 @@ end
 return packer.startup(function(use)
     -- The own Packer
     use "wbthomason/packer.nvim"
+    -- Colorscheme theme
+    use 'folke/tokyonight.nvim'
 
     -- Setup config after clone
     if packer_bootstrap then

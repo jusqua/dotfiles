@@ -56,6 +56,8 @@ set.mouse = "a"
 set.termguicolors = true
 -- Change the command prompt size
 set.cmdheight = 1
+-- Set statusline as global
+set.laststatus = 3
 
 -- : Search
 -- Highlight searchs
@@ -83,6 +85,10 @@ set.iskeyword:append "-,_"
 
 -- : GUI
 set.guifont = {"Hack", "h11"}
+
+-- : Colorscheme
+let.tokyonight_style = "storm"
+cmd [[ colorscheme tokyonight ]]
 
 -- : Neovide
 if (let.neovide) then
