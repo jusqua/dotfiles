@@ -68,6 +68,8 @@ set.ignorecase = true
 set.smartcase = true
 
 -- : Tweaks
+-- Don't show mode
+set.showmode = false
 -- Command history limit
 set.history = 50
 -- Fold lines manually
