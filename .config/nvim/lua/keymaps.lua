@@ -1,5 +1,5 @@
 -- : Aliases
-local set = vim.g
+local let = vim.g
 
 local function map(mode, new, old, options)
   local default = { noremap = true, silent = true }
@@ -17,8 +17,8 @@ local tmap = function (new, old) map("t", new, old) end
 -- : Leader key
 -- Set as Space key
 map("", "<Space>", "<Nop>")
-set.mapleader = " "
-set.maplocalleader = " "
+let.mapleader = " "
+let.maplocalleader = " "
 
 -- : Quick actions
 -- Leader + w to write
@@ -107,7 +107,7 @@ vmap("<A-j>", ":move '>+1<CR>gv=gv")
 
 -- : Terminal
 -- Esc to set Normal mode on Terminal mode
-tmap("<leader><Esc>", "<C-\\><C-N>")
+tmap("<Esc><Esc>", "<C-\\><C-N>:bd!<CR>")
 -- Leader + t to open terminal on a tab
 nmap("<leader>t", ":tabedit<CR>:terminal<CR>")
 
