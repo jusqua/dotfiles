@@ -89,5 +89,5 @@ vmap("<A-j>", ":move '>+1<CR>gv=gv")
 -- Esc to set Normal mode on Terminal mode
 tmap("<Esc><Esc>", "<C-\\><C-N>:bd!<CR>")
 -- Leader + t to open terminal
-nmap("<leader>t", ":terminal<CR>")
+nmap("<leader>t", ":ToggleTerm<CR>")
 

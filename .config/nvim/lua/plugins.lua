@@ -50,6 +50,12 @@ return packer.startup(function(use)
     config = [[ require "setup.comment" ]]
   }
 
+  -- Good Terminal made easy
+  use {
+    'akinsho/toggleterm.nvim',
+    config = [[ require "setup.toggleterm" ]]
+  }
+
   -- Setup config after clone
   if packer_bootstrap then
     require("packer").sync()

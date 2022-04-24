@@ -29,26 +29,6 @@ autocmd("BufReadPost", {
   end
 })
 
--- : Terminal
--- Enter insert mode when switching to terminal
-autocmd("TermOpen", {
-  command = "setlocal nonumber norelativenumber nocursorline noshowmode noshowcmd"
-})
--- Changes the terminal tab to terminal
-autocmd("TermOpen", {
-  command = "file Terminal"
-})
--- Start in insert mode
-autocmd("TermOpen", {
-  pattern = "*",
-  command = "startinsert"
-})
--- Close terminal buffer on process exit
-autocmd("BufLeave", {
-  pattern = "term://*",
-  command = "stopinsert"
-})
-
 -- : Packer
 -- Autoreload after update plugins file
 autocmd("BufWritePost", {
