@@ -15,7 +15,7 @@ end
 -- : Plugins
 return packer.startup(function(use)
   -- The own Packer
-  use "wbthomason/packer.nvim"
+  use 'wbthomason/packer.nvim'
 
   -- Dev icons
   use 'kyazdani42/nvim-web-devicons'
@@ -36,6 +36,12 @@ return packer.startup(function(use)
   use {
     'akinsho/bufferline.nvim',
     config = [[ require "setup.bufferline" ]]
+  }
+
+  -- Autopairs
+  use {
+    'windwp/nvim-autopairs',
+    config = [[ require "setup.autopairs" ]]
   }
 
   -- Setup config after clone
