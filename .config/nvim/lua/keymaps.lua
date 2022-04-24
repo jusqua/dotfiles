@@ -5,12 +5,12 @@ let.mapleader = " "
 let.maplocalleader = " "
 
 -- : Quick actions
+-- Leader + q, if remains one buffer then quit else delete the current buffer
+nmap("<leader>q", ":if len(filter(range(1, bufnr('$')), 'buflisted(v:val)'))==1 | q | else | bd | endif<CR>")
 -- Leader + w to write
 nmap("<leader>w", ":w<CR>")
--- Leader + q to buffer delete
-nmap("<leader>q", ":bd<CR>")
--- Leader + Q to quit
-nmap("<leader>Q", ":q<CR>")
+-- Set shortcut to open a file
+map("n", "<leader><leader>", ":edit ", { noremap = true })
 -- Y to yank entire text after cursor
 nmap("Y", "y$")
 -- L works like End key
