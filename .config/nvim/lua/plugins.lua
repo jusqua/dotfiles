@@ -44,6 +44,12 @@ return packer.startup(function(use)
     config = [[ require "setup.autopairs" ]]
   }
 
+  -- Comment keybindings
+  use {
+    'numToStr/Comment.nvim',
+    config = [[ require "setup.comment" ]]
+  }
+
   -- Setup config after clone
   if packer_bootstrap then
     require("packer").sync()
