@@ -7,8 +7,8 @@ let.maplocalleader = " "
 -- : Quick actions
 -- Leader + w to write
 nmap("<leader>w", ":w<CR>")
--- Leader + q to quit
-nmap("<leader>q", ":q<CR>")
+-- Leader + q to buffer delete
+nmap("<leader>q", ":bd<CR>")
 -- Y to yank entire text after cursor
 nmap("Y", "y$")
 -- L works like End key
@@ -58,26 +58,22 @@ nmap("<leader>v", "<C-w>v")
 -- Leader + s to split horizontally
 nmap("<leader>s", "<C-w>s")
 
--- : Tab control
--- Leader + n to open a new tab
-nmap("<leader>n", ":tabedit<CR>")
-
--- : Tab navigation
--- Leader + l to move to the next tab
-nmap("<leader>l", "gt")
--- Leader + h to move to the previous tab
-nmap("<leader>h", "gT")
--- Leader + number to move to the numbered tab
-nmap("<leader>1", ":tabfirst<CR>")
-nmap("<leader>2", ":tabnext 2<CR>")
-nmap("<leader>3", ":tabnext 3<CR>")
-nmap("<leader>4", ":tabnext 4<CR>")
-nmap("<leader>5", ":tabnext 5<CR>")
-nmap("<leader>6", ":tabnext 6<CR>")
-nmap("<leader>7", ":tabnext 7<CR>")
-nmap("<leader>8", ":tabnext 8<CR>")
-nmap("<leader>9", ":tabnext 9<CR>")
-nmap("<leader>0", ":tabnext 10<CR>")
+-- : Buffer navigation
+-- Leader + l to move to the next buffer
+nmap("<leader>l", ":bn<CR>")
+-- Leader + h to move to the previous buffer
+nmap("<leader>h", ":bp<CR>")
+-- Leader + number to move to the numbered buffer
+nmap("<leader>1", ":bf<CR>")
+nmap("<leader>2", ":b2<CR>")
+nmap("<leader>3", ":b3<CR>")
+nmap("<leader>4", ":b4<CR>")
+nmap("<leader>5", ":b5<CR>")
+nmap("<leader>6", ":b6<CR>")
+nmap("<leader>7", ":b7<CR>")
+nmap("<leader>8", ":b8<CR>")
+nmap("<leader>9", ":b9<CR>")
+nmap("<leader>0", ":bl<CR>")
 
 -- : Moving text arround
 -- Alt + k to move line up
@@ -92,6 +88,6 @@ vmap("<A-j>", ":move '>+1<CR>gv=gv")
 -- : Terminal
 -- Esc to set Normal mode on Terminal mode
 tmap("<Esc><Esc>", "<C-\\><C-N>:bd!<CR>")
--- Leader + t to open terminal on a tab
-nmap("<leader>t", ":tabedit<CR>:terminal<CR>")
+-- Leader + t to open terminal
+nmap("<leader>t", ":terminal<CR>")
 
