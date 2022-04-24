@@ -17,6 +17,10 @@ return packer.startup(function(use)
     use "wbthomason/packer.nvim"
     -- Colorscheme theme
     use 'folke/tokyonight.nvim'
+    -- Status Line
+    use 'nvim-lualine/lualine.nvim'
+    -- Dev icons
+    use 'kyazdani42/nvim-web-devicons'
 
     -- Setup config after clone
     if packer_bootstrap then
