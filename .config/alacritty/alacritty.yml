@@ -15,15 +15,9 @@ scrolling:
   multiplier: 3
 
 font:
-  # Uses Hack as Default
+  # Set font family
   normal:
-    family: Hack
-  bold:
-    family: Hack
-  italic:
-    family: Hack
-  bold_italic:
-    family: Hack
+    family: JetBrainsMono Nerd Font Mono
   # Font size
   size: 12
   # No extra spaces

@@ -81,7 +81,7 @@ set.iskeyword:append "-,_"
 -- : Neovide
 if (let.neovide) then
   -- Change font
-  set.guifont = "Hack:h11"
+  set.guifont = "JetBrainsMono Nerd Font Mono:h11"
   -- Window aspects
   let.neovide_refresh_rate = 75
   let.neovide_no_idle = true
