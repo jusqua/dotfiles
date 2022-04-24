@@ -7,7 +7,9 @@ end
 -- : Setup
 lualine.setup {
   options = {
-    globalstatus = true
+    globalstatus = true,
+    component_separators = { left = '', right = '' },
+    section_separators = { left = '', right = '' },
   },
   sections = {
     lualine_a = { 'mode' },
