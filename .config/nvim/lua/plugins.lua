@@ -19,6 +19,8 @@ return packer.startup(function(use)
     use 'folke/tokyonight.nvim'
     -- Status Line
     use 'nvim-lualine/lualine.nvim'
+    -- Tab line
+    use 'akinsho/bufferline.nvim'
     -- Dev icons
     use 'kyazdani42/nvim-web-devicons'
 
