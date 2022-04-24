@@ -9,14 +9,14 @@ let.maplocalleader = " "
 nmap("<leader>w", ":w<CR>")
 -- Leader + q to buffer delete
 nmap("<leader>q", ":bd<CR>")
+-- Leader + Q to quit
+nmap("<leader>Q", ":q<CR>")
 -- Y to yank entire text after cursor
 nmap("Y", "y$")
 -- L works like End key
 nmap("L", "$")
 -- H works like Home key
 nmap("H", "^")
--- Leader + d to open docs
-nmap("<leader>d", "<Help>")
 
 -- : Tweaks
 -- Keep visual when indent
@@ -24,6 +24,7 @@ vmap("<", "<gv")
 vmap(">", ">gv")
 -- Override delete behavior
 nmap("d", '"_d')
+nmap("D", '"_D')
 vmap("d", '"_d')
 -- Override paste behavior
 vmap("p", '"_dP')
@@ -37,26 +38,6 @@ nmap("<C-r>", "<Nop>")
 nmap("Q", "<Nop>")
 -- Fast Normal switch
 imap("jk", "<Esc>")
-
--- : Window navigation
--- Ctrl + Vi keys to navigate between window splits
-nmap("<C-h>", "<C-w>h")
-nmap("<C-j>", "<C-w>j")
-nmap("<C-k>", "<C-w>k")
-nmap("<C-l>", "<C-w>l")
-
--- : Window resizing
--- Ctrl + Arrow keys to resize window
-nmap("<C-Up>", ":resize -2<CR>")
-nmap("<C-Down>", ":resize +2<CR>")
-nmap("<C-Right>", ":vertical resize -2<CR>")
-nmap("<C-Left>", ":vertical resize +2<CR>")
-
--- : Window spliting
--- Leader + v to split vertically
-nmap("<leader>v", "<C-w>v")
--- Leader + s to split horizontally
-nmap("<leader>s", "<C-w>s")
 
 -- : Buffer navigation
 -- Leader + l to move to the next buffer
@@ -87,7 +68,7 @@ vmap("<A-j>", ":move '>+1<CR>gv=gv")
 
 -- : Terminal
 -- Esc to set Normal mode on Terminal mode
-tmap("<Esc><Esc>", "<C-\\><C-N>:bd!<CR>")
+tmap("<Esc>", "<C-\\><C-N>:bd!<CR>")
 -- Leader + t to open terminal
 nmap("<leader>t", ":ToggleTerm<CR>")
 
