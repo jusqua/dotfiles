@@ -41,20 +41,20 @@ imap("jk", "<Esc>")
 
 -- : Buffer navigation
 -- Leader + l to move to the next buffer
-nmap("<leader>l", ":bn<CR>")
+nmap("<C-l>", ":bn<CR>")
 -- Leader + h to move to the previous buffer
-nmap("<leader>h", ":bp<CR>")
+nmap("<C-h>", ":bp<CR>")
 -- Leader + number to move to the numbered buffer
-nmap("<leader>1", ":bf<CR>")
-nmap("<leader>2", ":b2<CR>")
-nmap("<leader>3", ":b3<CR>")
-nmap("<leader>4", ":b4<CR>")
-nmap("<leader>5", ":b5<CR>")
-nmap("<leader>6", ":b6<CR>")
-nmap("<leader>7", ":b7<CR>")
-nmap("<leader>8", ":b8<CR>")
-nmap("<leader>9", ":b9<CR>")
-nmap("<leader>0", ":bl<CR>")
+nmap("<C-1>", ":bf<CR>")
+nmap("<C-2>", ":b2<CR>")
+nmap("<C-3>", ":b3<CR>")
+nmap("<C-4>", ":b4<CR>")
+nmap("<C-5>", ":b5<CR>")
+nmap("<C-6>", ":b6<CR>")
+nmap("<C-7>", ":b7<CR>")
+nmap("<C-8>", ":b8<CR>")
+nmap("<C-9>", ":b9<CR>")
+nmap("<C-0>", ":bl<CR>")
 
 -- : Moving text arround
 -- Alt + k to move line up
@@ -68,7 +68,7 @@ vmap("<A-j>", ":move '>+1<CR>gv=gv")
 
 -- : Terminal
 -- Esc to set Normal mode on Terminal mode
-tmap("<Esc>", "<C-\\><C-N>:bd!<CR>")
+tmap("<Esc><Esc>", "<C-\\><C-N>:bd!<CR>")
 -- Leader + t to open terminal
 nmap("<leader>t", ":ToggleTerm<CR>")
 
