@@ -83,14 +83,17 @@ if (let.neovide) then
   -- Change font
   set.guifont = "JetBrainsMono Nerd Font Mono:h11"
   -- Window aspects
-  let.neovide_refresh_rate = 75
   let.neovide_no_idle = true
   let.neovide_fullscreen = true
-  -- Visual Effects
-  let.neovide_cursor_animation_length = 0.1
-  let.neovide_cursor_trail_length = 0.1
-  let.neovide_cursor_animate_command_line = false
+  let.neovide_refresh_rate = 75
+  let.neovide_hide_mouse_when_typing = true
+  -- Cursor configs
   let.neovide_cursor_antialiasing = true
+  let.neovide_cursor_trail_length = 0
+  let.neovide_cursor_animation_length = 0.05
+  let.neovide_cursor_animate_command_line = false
+  let.neovide_cursor_animate_in_insert_mode = false
+  -- Visual Effects
   let.neovide_cursor_vfx_mode = "wireframe"
   let.neovide_cursor_vfx_opacity = 100
   let.neovide_cursor_vfx_particle_lifetime = 0.5
