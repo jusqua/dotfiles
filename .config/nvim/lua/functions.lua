@@ -8,8 +8,15 @@ function map(mode, new, old, options)
   vim.api.nvim_set_keymap(mode, new, old, options)
 end
 
-nmap = function (map, alias, options) map("n", map, alias, options) end
-imap = function (map, alias, options) map("i", map, alias, options) end
-vmap = function (map, alias, options) map("v", map, alias, options) end
-tmap = function (map, alias, options) map("t", map, alias, options) end
+nmap = function (keybinding, alias) map("n", keybinding, alias) end
+imap = function (keybinding, alias) map("i", keybinding, alias) end
+vmap = function (keybinding, alias) map("v", keybinding, alias) end
+tmap = function (keybinding, alias) map("t", keybinding, alias) end
+
+-- Custom behaviors
+function close()
+  -- Get the buffer amount
+  local buffers = fn.len(fn.filter(fn.range(1, fn.bufnr('$')), 'buflisted(v:val)'))
+  cmd ((not let.neovide and buffers == 1) and "q" or "bd")
+end
 
