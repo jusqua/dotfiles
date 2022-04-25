@@ -91,8 +91,6 @@ if (let.neovide) then
   let.neovide_cursor_antialiasing = true
   let.neovide_cursor_trail_length = 0
   let.neovide_cursor_animation_length = 0.05
-  let.neovide_cursor_animate_command_line = false
-  let.neovide_cursor_animate_in_insert_mode = false
   -- Visual Effects
   let.neovide_cursor_vfx_mode = "wireframe"
   let.neovide_cursor_vfx_opacity = 100
