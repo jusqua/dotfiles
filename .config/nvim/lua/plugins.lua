@@ -21,10 +21,7 @@ return packer.startup(function(use)
   use 'kyazdani42/nvim-web-devicons'
 
   -- Colorscheme theme
-  use {
-    'folke/tokyonight.nvim',
-    config = [[ require "setup.tokyonight" ]]
-  }
+  use 'folke/tokyonight.nvim'
 
   -- Status Line
   use {
