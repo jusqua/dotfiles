@@ -87,8 +87,9 @@ if (let.neovide) then
   let.neovide_no_idle = true
   let.neovide_fullscreen = true
   -- Visual Effects
-  let.neovide_cursor_animation_lenght = 0.01
-  let.neovide_cursor_trail_lenght = 0.01
+  let.neovide_cursor_animation_length = 0.1
+  let.neovide_cursor_trail_length = 0.1
+  let.neovide_animate_command_line = false
   let.neovide_cursor_antialiasing = true
   let.neovide_cursor_vfx_mode = "wireframe"
   let.neovide_cursor_vfx_opacity = 100
