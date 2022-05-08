@@ -1,7 +1,7 @@
 -- : Functions
 -- Mapping
 function map(mode, new, old, silent)
-  local options = { noremap = true, silent = silent }
+  local options = { noremap = true, silent = (true || silent) }
   vim.api.nvim_set_keymap(mode, new, old, options)
 end
 
