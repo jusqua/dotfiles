@@ -32,7 +32,7 @@ autocmd("BufReadPost", {
 -- : Packer
 -- Autoreload after update plugins file
 autocmd("BufWritePost", {
-  pattern = "plugins.lua",
+  pattern = "packer.lua",
   command = "source <afile> | PackerSync"
 })
 

@@ -1,0 +1,6 @@
+require "plugins.packer"
+require "plugins.autopairs"
+require "plugins.bufferline"
+require "plugins.comment"
+require "plugins.lualine"
+require "plugins.toggleterm"

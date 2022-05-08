@@ -24,34 +24,19 @@ return packer.startup(function(use)
   use 'folke/tokyonight.nvim'
 
   -- Status Line
-  use {
-    'nvim-lualine/lualine.nvim',
-    config = [[ require "setup.lualine" ]]
-  }
+  use 'nvim-lualine/lualine.nvim'
 
   -- Tab line
-  use {
-    'akinsho/bufferline.nvim',
-    config = [[ require "setup.bufferline" ]]
-  }
+  use 'akinsho/bufferline.nvim'
 
   -- Autopairs
-  use {
-    'windwp/nvim-autopairs',
-    config = [[ require "setup.autopairs" ]]
-  }
+  use 'windwp/nvim-autopairs'
 
   -- Comment keybindings
-  use {
-    'numToStr/Comment.nvim',
-    config = [[ require "setup.comment" ]]
-  }
+  use 'numToStr/Comment.nvim'
 
   -- Good Terminal made easy
-  use {
-    'akinsho/toggleterm.nvim',
-    config = [[ require "setup.toggleterm" ]]
-  }
+  use 'akinsho/toggleterm.nvim'
 
   -- Setup config after clone
   if packer_bootstrap then
