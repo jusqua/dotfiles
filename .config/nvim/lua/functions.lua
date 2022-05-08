@@ -10,10 +10,10 @@ imap = function (keybinding, alias, options) map("i", keybinding, alias, options
 vmap = function (keybinding, alias, options) map("v", keybinding, alias, options) end
 tmap = function (keybinding, alias, options) map("t", keybinding, alias, options) end
 
--- Custom behaviors
-function close()
-  -- Get the buffer amount
-  local buffers = fn.len(fn.filter(fn.range(1, fn.bufnr('$')), 'buflisted(v:val)'))
-  cmd ((not let.neovide and buffers == 1) and "q" or "bd")
+-- Toggle gitsigns
+function toggle_gitsigns()
+  cmd [[ Gitsigns toggle_numhl  ]]
+  cmd [[ Gitsigns toggle_linehl ]]
+  cmd [[ Gitsigns toggle_signs  ]]
 end
 
