@@ -30,6 +30,7 @@ return packer.startup(
     use 'akinsho/bufferline.nvim'
     -- Autopairs
     use 'windwp/nvim-autopairs'
+    use 'windwp/nvim-ts-autotag'
     -- Comment keybindings
     use 'numToStr/Comment.nvim'
     -- Good Terminal made easy
