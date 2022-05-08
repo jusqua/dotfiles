@@ -6,5 +6,6 @@ end
 
 -- : Setup
 let.tokyonight_style = "storm"
-cmd [[ colorscheme tokyonight ]]
+
+current_colorscheme = "tokyonight"
 

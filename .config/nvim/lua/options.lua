@@ -77,6 +77,8 @@ set.shortmess:append "c"
 set.whichwrap:append "<,>,[,]"
 -- Considers hyphen and underline was word letters
 set.iskeyword:append "-,_"
+-- Setup colorscheme
+cmd("colorscheme " .. (current_colorscheme or "default"))
 
 -- : Neovide
 if (let.neovide) then
