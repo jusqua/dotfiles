@@ -18,6 +18,10 @@ return packer.startup(
   function(use)
     -- The own Packer
     use 'wbthomason/packer.nvim'
+    -- Cache plugins
+    use 'lewis6991/impatient.nvim'
+    -- Common functions for some plugins
+    use 'nvim-lua/plenary.nvim'
     -- Dev icons
     use 'kyazdani42/nvim-web-devicons'
     -- Treesitter syntax highlight
@@ -39,6 +43,8 @@ return packer.startup(
     use "lukas-reineke/indent-blankline.nvim"
     -- Git integration
     use 'lewis6991/gitsigns.nvim'
+    -- Fuzzy finder
+    use 'nvim-telescope/telescope.nvim'
 
     -- Setup config after clone
     if packer_bootstrap then

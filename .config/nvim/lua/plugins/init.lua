@@ -1,3 +1,4 @@
+require "impatient"
 require "plugins.packer"
 require "plugins.autopairs"
 require "plugins.bufferline"
@@ -8,4 +9,5 @@ require "plugins.blankline"
 require "plugins.tokyonight"
 require "plugins.treesitter"
 require "plugins.gitsigns"
+require "plugins.telescope"
 

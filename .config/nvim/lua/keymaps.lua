@@ -5,8 +5,12 @@ let.mapleader = " "
 let.maplocalleader = " "
 
 -- : Quick actions
--- Set shortcut to open a file
-nmap("<leader><leader>", ":edit ", noremap)
+-- Open files
+nmap("<leader>ff", ":Telescope find_files<CR>")
+-- Open already opened files
+nmap("<leader>fo", ":Telescope oldfiles<CR>")
+-- Open files by content
+nmap("<leader>fg", ":Telescope live_grep<CR>")
 -- Leader + q, if remains one buffer then quit else delete the current buffer
 nmap("<leader>q", ":bd<CR>")
 -- Leader + w to write
