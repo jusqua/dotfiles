@@ -1,17 +1,14 @@
 -- : Functions
 -- Mapping
-function map(mode, new, old, options)
-  local default = { noremap = true, silent = true }
-  if not options then
-    options = default
-  end
+function map(mode, new, old, silent)
+  local options = { noremap = true, silent = silent }
   vim.api.nvim_set_keymap(mode, new, old, options)
 end
 
-nmap = function (keybinding, alias) map("n", keybinding, alias) end
-imap = function (keybinding, alias) map("i", keybinding, alias) end
-vmap = function (keybinding, alias) map("v", keybinding, alias) end
-tmap = function (keybinding, alias) map("t", keybinding, alias) end
+nmap = function (keybinding, alias, silent) map("n", keybinding, alias, silent) end
+imap = function (keybinding, alias, silent) map("i", keybinding, alias, silent) end
+vmap = function (keybinding, alias, silent) map("v", keybinding, alias, silent) end
+tmap = function (keybinding, alias, silent) map("t", keybinding, alias, silent) end
 
 -- Custom behaviors
 function close()
