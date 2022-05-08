@@ -9,9 +9,9 @@ bufferline.setup {
   options = {
     numbers = "none",
     modified_icon = "·",
-    separator_style = { "", "" },
-    left_trunc_marker = "<",
-    right_trunc_marker = ">",
+    separator_style = { "|", "|" },
+    left_trunc_marker = "⇠",
+    right_trunc_marker = "⇢",
     max_name_length = 30,
     max_prefix_length = 30,
     tab_size = 25,
