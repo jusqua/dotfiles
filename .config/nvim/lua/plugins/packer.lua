@@ -36,6 +36,8 @@ return packer.startup(
     use 'akinsho/toggleterm.nvim'
     -- Indentation guides
     use "lukas-reineke/indent-blankline.nvim"
+    -- Git integration
+    use 'lewis6991/gitsigns.nvim'
 
     -- Setup config after clone
     if packer_bootstrap then

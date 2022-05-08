@@ -7,3 +7,5 @@ require "plugins.toggleterm"
 require "plugins.blankline"
 require "plugins.tokyonight"
 require "plugins.treesitter"
+require "plugins.gitsigns"
+
