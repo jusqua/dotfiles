@@ -34,6 +34,8 @@ return packer.startup(
     use 'numToStr/Comment.nvim'
     -- Good Terminal made easy
     use 'akinsho/toggleterm.nvim'
+    -- Indentation guides
+    use "lukas-reineke/indent-blankline.nvim"
 
     -- Setup config after clone
     if packer_bootstrap then
