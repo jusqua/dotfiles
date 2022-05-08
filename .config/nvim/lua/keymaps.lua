@@ -6,7 +6,7 @@ let.maplocalleader = " "
 
 -- : Quick actions
 -- Set shortcut to open a file
-nmap("<leader><leader>", ":edit ", false)
+nmap("<leader><leader>", ":edit ", noremap)
 -- Leader + q, if remains one buffer then quit else delete the current buffer
 nmap("<leader>q", ":lua close()<CR>")
 -- Leader + w to write
