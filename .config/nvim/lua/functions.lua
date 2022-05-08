@@ -2,7 +2,7 @@
 -- Mapping
 function map(mode, new, old, options)
   options = options or { noremap = true, silent = true }
-  vim.api.nvim_set_keymap(mode, new, old, options)
+  vim.keymap.set(mode, new, old, options)
 end
 
 nmap = function (keybinding, alias, options) map("n", keybinding, alias, options) end
