@@ -7,11 +7,13 @@ end
 -- : Setup
 gitsigns.setup {
   signs = {
-      add          = { text = '│' },
-      change       = { text = '│' },
-      delete       = { text = '│' },
-      topdelete    = { text = '│' },
-      changedelete = { text = '│' },
-    },
+    add          = { text = 'A' },
+    change       = { text = 'C' },
+    changedelete = { text = 'C' },
+    delete       = { text = 'D' },
+    topdelete    = { text = 'D' },
+  },
+  signcolumn = false,
+  update_debounce = 200,
 }
 
