@@ -47,6 +47,8 @@ return packer.startup(
     use 'nvim-telescope/telescope.nvim'
     use 'nvim-telescope/telescope-file-browser.nvim'
     use 'nvim-telescope/telescope-project.nvim'
+    -- Greeter
+    use 'goolord/alpha-nvim'
 
     -- Setup config after clone
     if packer_bootstrap then
