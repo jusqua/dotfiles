@@ -7,7 +7,6 @@ end
 -- : Setup
 local dashboard = require "alpha.themes.dashboard"
 
--- TODO
 dashboard.section.header.val = {
   [[    ╔╕         ╔╕    ]],
   [[  ╔╬╫╫╫╦       ╟▓▓╕  ]],
@@ -27,7 +26,7 @@ dashboard.section.buttons.val = {
   dashboard.button("SPC f f", "  Find File",       ":Telescope find_files<CR>"),
   dashboard.button("SPC f o", "ﮮ  Recent File",     ":Telescope oldfiles<CR>"),
   dashboard.button("SPC f p", "  Projects",        ":Telescope project<CR>"),
-  dashboard.button("SPC f c", "  Configuration",   ":cd ~/.dotfiles | Telescope file_browser<CR>"),
+  dashboard.button("SPC f c", "  Configuration",   ":cd ~/.dotfiles | Telescope file_browser hidden=true no_ignore=true<CR>"),
   dashboard.button("q",       "  Exit Neovim",     ":qa<CR>"),
 }
 

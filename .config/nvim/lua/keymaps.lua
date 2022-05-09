@@ -9,6 +9,8 @@ let.maplocalleader = " "
 nmap("<leader><leader>", ":Telescope file_browser<CR>")
 -- Open files by file name
 nmap("<leader>ff", ":Telescope find_files<CR>")
+-- Open hidden files
+nmap("<leader>fh", ":Telescope find_files hidden=true no_ignore=true<CR>")
 -- Open already opened files
 nmap("<leader>fo", ":Telescope oldfiles<CR>")
 -- Open files by word
@@ -20,7 +22,9 @@ nmap("<leader>up", ":PackerSync<CR>")
 -- Update Treesiter
 nmap("<leader>ut", ":TSUpdateSync<CR>")
 -- Delete buffer
-nmap("<leader>q", ":lua handle_close()<CR>")
+nmap("<leader>d", ":lua handle_close()<CR>")
+-- Quit
+nmap("<leader>q", ":confirm qa<CR>")
 -- Write file
 nmap("<leader>w", ":w<CR>")
 -- Y to yank entire text after cursor
