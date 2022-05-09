@@ -18,7 +18,7 @@ function toggle_gitsigns()
 end
 
 function handle_close()
-  local is_last_buffer = [[ echo len(getbufinfo({"buflisted":1})) ]]
+  local is_last_buffer = fn.len(fn.getbufinfo({ buflisted = 1})) == 1
   cmd [[ bdelete ]]
   if (is_last_buffer) then
     cmd [[ Alpha ]]
