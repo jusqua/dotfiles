@@ -17,3 +17,11 @@ function toggle_gitsigns()
   cmd [[ Gitsigns toggle_signs  ]]
 end
 
+function handle_close()
+  local is_last_buffer = [[ echo len(getbufinfo({"buflisted":1})) ]]
+  cmd [[ bdelete ]]
+  if (is_last_buffer) then
+    cmd [[ Alpha ]]
+  end
+end
+

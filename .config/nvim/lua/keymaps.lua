@@ -18,9 +18,9 @@ nmap("<leader>fc", ":cd ~/.dotfiles | Telescope file_browser<CR>")
 -- Update Plugins
 nmap("<leader>up", ":PackerSync<CR>")
 -- Update Treesiter
-nmap("<leader>up", ":TSUpdateSync<CR>")
+nmap("<leader>ut", ":TSUpdateSync<CR>")
 -- Delete buffer
-nmap("<leader>q", ":bd<CR>")
+nmap("<leader>q", ":lua handle_close()<CR>")
 -- Write file
 nmap("<leader>w", ":w<CR>")
 -- Y to yank entire text after cursor
@@ -77,5 +77,5 @@ nmap("<leader>tg", ":lua toggle_gitsigns()<CR>")
 -- Leader + t to open terminal
 nmap("<C-\\>", ":ToggleTerm<CR>")
 -- Esc to set Normal mode on Terminal mode
-tmap("<C-\\>", "<C-\\><C-N>:ToggleTerm<CR>")
+tmap("<Esc><Esc>", "<C-\\><C-N>:ToggleTerm<CR>")
 
