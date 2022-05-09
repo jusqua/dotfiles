@@ -7,11 +7,16 @@ end
 -- : Setup
 telescope.setup {
   extensions = {
+    find_file = {
+      hidden = true,
+      no_ignore = true,
+    },
     file_browser = {
+      hidden = true,
+      no_ignore = true,
       theme = "ivy",
     },
     project = {
-      hidden_files = true,
       theme = "dropdown"
     }
   }
