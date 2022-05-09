@@ -6,7 +6,6 @@ end
 
 -- : Setup
 blankline.setup {
-  indent_blankline_enabled = false,
   show_trailing_blankline_indent = false,
 }
 
