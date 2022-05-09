@@ -1,4 +1,4 @@
-require "impatient"
+_, impatient = pcall(require, 'packer')
 require "plugins.packer"
 require "plugins.autopairs"
 require "plugins.bufferline"

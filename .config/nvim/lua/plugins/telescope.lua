@@ -5,5 +5,18 @@ if not ok then
 end
 
 -- : Setup
-telescope.setup {}
+telescope.setup {
+  extensions = {
+    file_browser = {
+      theme = "ivy",
+    },
+    project = {
+      hidden_files = true,
+      theme = "dropdown"
+    }
+  }
+}
+
+telescope.load_extension "file_browser"
+telescope.load_extension "project"
 

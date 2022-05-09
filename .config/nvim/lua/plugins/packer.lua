@@ -45,6 +45,8 @@ return packer.startup(
     use 'lewis6991/gitsigns.nvim'
     -- Fuzzy finder
     use 'nvim-telescope/telescope.nvim'
+    use 'nvim-telescope/telescope-file-browser.nvim'
+    use 'nvim-telescope/telescope-project.nvim'
 
     -- Setup config after clone
     if packer_bootstrap then

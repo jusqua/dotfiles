@@ -5,15 +5,23 @@ let.mapleader = " "
 let.maplocalleader = " "
 
 -- : Quick actions
--- Open files
+-- Open file
+nmap("<leader><leader>", ":Telescope file_browser<CR>")
+-- Open files by file name
 nmap("<leader>ff", ":Telescope find_files<CR>")
 -- Open already opened files
 nmap("<leader>fo", ":Telescope oldfiles<CR>")
--- Open files by content
-nmap("<leader>fg", ":Telescope live_grep<CR>")
--- Leader + q, if remains one buffer then quit else delete the current buffer
+-- Open files by word
+nmap("<leader>fp", ":Telescope project<CR>")
+-- To the dotfiles
+nmap("<leader>fc", ":cd ~/.dotfiles | Telescope file_browser<CR>")
+-- Update Plugins
+nmap("<leader>up", ":PackerSync<CR>")
+-- Update Treesiter
+nmap("<leader>up", ":TSUpdateSync<CR>")
+-- Delete buffer
 nmap("<leader>q", ":bd<CR>")
--- Leader + w to write
+-- Write file
 nmap("<leader>w", ":w<CR>")
 -- Y to yank entire text after cursor
 nmap("Y", "y$")
@@ -49,7 +57,7 @@ nmap("<Tab>", ":bn<CR>")
 -- Leader + h to move to the previous buffer
 nmap("<S-Tab>", ":bp<CR>")
 -- Leader + number to move to the numbered buffer
-nmap("<leader>b", ":BufferLinePick<CR>")
+nmap("<leader>bp", ":BufferLinePick<CR>")
 
 -- : Moving text arround
 -- Alt + k to move line up
@@ -63,7 +71,7 @@ vmap("<A-j>", ":move '>+1<CR>gv=gv")
 
 -- : Gitsigns
 -- Toggle
-nmap("<leader>g", ":lua toggle_gitsigns()<CR>")
+nmap("<leader>tg", ":lua toggle_gitsigns()<CR>")
 
 -- : Terminal
 -- Leader + t to open terminal

@@ -21,6 +21,7 @@ bufferline.setup {
     show_close_icon = false,
     show_tab_indicators = false,
     show_buffer_default_icon = false,
+    always_show_bufferline = false
   }
 }
 
