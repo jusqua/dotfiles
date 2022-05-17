@@ -1,7 +1,7 @@
 # dotfiles
 My dotfiles
 
-# Requirements
+## Requirements
 - Neovim (Text Editor)
 - Alacritty (Terminal Emulator)
 - Fish (Terminal Shell)
@@ -10,10 +10,18 @@ My dotfiles
 - Ripgrep (`grep` alternative)
 - Fd (`find` alternative)
 - Starship (Shell Prompt)
+- Clang (C compiler)
 
-# Requires GNU Stow for dotfiles management
+### For fedora
+```
+sudo dnf install fd-find starship neovim exa bat ripgrep stow clang
+```
+
+## Requires GNU Stow for dotfiles management
 ##### Execute:
 ```sh
 stow .
 ```
+
+
 
