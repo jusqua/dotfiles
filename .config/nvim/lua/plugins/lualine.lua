@@ -8,9 +8,8 @@ end
 lualine.setup {
   options = {
     globalstatus = true,
-    component_separators = { left = '·', right = '·' },
-    section_separators = { left = '|', right = '|' },
-    disabled_filetypes = { "toggleterm", "alpha", "TelescopePrompt" }
+    component_separators = { left = '', right = '' },
+    section_separators = { left = '', right = '' },
   },
   sections = {
     lualine_a = { 'mode' },

@@ -37,18 +37,12 @@ return packer.startup(
     use 'windwp/nvim-ts-autotag'
     -- Comment keybindings
     use 'numToStr/Comment.nvim'
-    -- Good Terminal made easy
-    use 'akinsho/toggleterm.nvim'
     -- Indentation guides
     use "lukas-reineke/indent-blankline.nvim"
     -- Git integration
     use 'lewis6991/gitsigns.nvim'
-    -- Fuzzy finder
-    use 'nvim-telescope/telescope.nvim'
-    use 'nvim-telescope/telescope-file-browser.nvim'
-    use 'nvim-telescope/telescope-project.nvim'
-    -- Greeter
-    use 'goolord/alpha-nvim'
+    -- Theme
+    use{ "catppuccin/nvim", as = "catppuccin" }
 
     -- Setup config after clone
     if packer_bootstrap then
