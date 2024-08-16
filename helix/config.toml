@@ -1,0 +1,16 @@
+theme = "catppuccin_mocha"
+
+[editor]
+scrolloff = 10
+line-number = "relative"
+cursorline = true
+true-color = true
+bufferline = "multiple"
+workspace-lsp-roots = [".git"]
+popup-border = "all"
+
+[editor.lsp]
+display-messages = true
+
+[editor.soft-wrap]
+enable = true
