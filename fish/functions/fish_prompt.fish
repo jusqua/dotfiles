@@ -1,7 +1,3 @@
-function fish_greeting
-    # Display nothing at all
-end
-
 function fish_prompt --description 'Write out the prompt'
     set -l last_pipestatus $pipestatus
     set -lx __fish_last_status $status # Export for __fish_print_pipestatus.
@@ -31,11 +27,6 @@ function fish_prompt --description 'Write out the prompt'
     set -l statusb_color (set_color $bold_flag $fish_color_status)
     set -l prompt_status (__fish_print_pipestatus "[" "]" "|" "$status_color" "$statusb_color" $last_pipestatus)
 
-    # Verify if is inside a container
-    set -l _container_id ""
-    if test $CONTAINER_ID
-        set _container_id "[$CONTAINER_ID] "
-    end
-
-    echo -n -s $_container_id (set_color $color_cwd) (prompt_pwd) $normal (fish_vcs_prompt) $normal " "$prompt_status $suffix " "
+    echo -n -s (distrobox_prompt) (venv_prompt) (set_color $color_cwd) (prompt_pwd) $normal (fish_vcs_prompt) $normal " "$prompt_status $suffix " "
 end
+
