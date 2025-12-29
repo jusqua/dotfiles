@@ -1,0 +1,12 @@
+[user]
+	name = Ádrian Gama
+	email = adrian.gama.se@gmail.com
+	signingkey = ~/.ssh/git.pub
+[gpg]
+	format = ssh
+[commit]
+	gpgsign = true
+[tag]
+	gpgsign = true
+[format]
+	signoff = true
