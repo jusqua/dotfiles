@@ -1,5 +1,0 @@
-simplified_ui true
-default_shell "fish"
-pane_frames false
-theme "catppuccin-mocha"
-default_layout "compact"
