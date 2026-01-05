@@ -1,0 +1,13 @@
+# .bashrc
+
+if [ -f /etc/bashrc ]; then
+    . /etc/bashrc
+fi
+
+if ! [[ "$PATH" =~ "$HOME/.local/bin:" ]]; then
+    PATH="$HOME/.local/bin:$PATH"
+fi
+export PATH
+
+export PS1='\[\e[0;32m\]\w\[\e[0m\]\$ '
+
